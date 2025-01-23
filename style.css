@@ -1,26 +1,60 @@
 /* styles.css */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f3f4f6;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #ff7eb3, #ff758c);
   margin: 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  color: #333;
 }
 
-.login-container {
+.container {
   background: #ffffff;
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
 }
 
-h1 {
+.form-container {
+  text-align: center;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 1rem;
-  color: #333333;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  padding: 0.5rem;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 10px;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.toggle-buttons button.active {
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: white;
+}
+
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #ff758c;
 }
 
 .input-group {
@@ -30,50 +64,36 @@ h1 {
 
 label {
   display: block;
-  margin-bottom: 0.5rem;
-  color: #555555;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #555;
 }
 
 input {
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid #cccccc;
+  border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 1rem;
 }
 
 input:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 3px #007bff;
+  border-color: #ff758c;
 }
 
-.login-btn {
+.btn {
   width: 100%;
   padding: 0.75rem;
-  background-color: #007bff;
-  color: #ffffff;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: white;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background 0.3s;
 }
 
-.login-btn:hover {
-  background-color: #0056b3;
-}
-
-p {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+.btn:hover {
+  background: linear-gradient(to right, #ff4a6e, #ff6070);
 }
