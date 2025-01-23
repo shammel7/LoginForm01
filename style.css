@@ -1,49 +1,58 @@
-/* styles.css */
-body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, #ff7eb3, #ff758c);
+/* General Reset */
+body, h2, p, input, button {
   margin: 0;
-  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: #333;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 
+/* Container */
 .container {
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  width: 350px;
+  background: #fff;
+  color: #333;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.form-container {
-  text-align: center;
-}
-
+/* Toggle Buttons */
 .toggle-buttons {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
 .toggle-buttons button {
   flex: 1;
-  padding: 0.5rem;
-  background: #f0f0f0;
+  padding: 10px 0;
   border: none;
-  border-radius: 10px;
-  margin: 0 0.5rem;
+  background: #f0f0f0;
+  color: #333;
+  font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s, color 0.3s;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
 .toggle-buttons button.active {
-  background: linear-gradient(to right, #ff758c, #ff7eb3);
-  color: white;
+  background: #2575fc;
+  color: #fff;
 }
 
+/* Forms */
 .form {
   display: none;
 }
@@ -52,48 +61,44 @@ body {
   display: block;
 }
 
-h2 {
-  margin-bottom: 1rem;
-  color: #ff758c;
+.form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
 }
 
+/* Input Groups */
 .input-group {
-  margin-bottom: 1rem;
-  text-align: left;
+  margin-bottom: 15px;
 }
 
-label {
+.input-group label {
   display: block;
-  margin-bottom: 0.3rem;
-  font-size: 0.9rem;
-  color: #555;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-input {
+.input-group input {
   width: 100%;
-  padding: 0.5rem;
+  padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
-input:focus {
-  outline: none;
-  border-color: #ff758c;
-}
-
+/* Buttons */
 .btn {
   width: 100%;
-  padding: 0.75rem;
-  background: linear-gradient(to right, #ff758c, #ff7eb3);
-  color: white;
+  padding: 10px;
+  background: #2575fc;
+  color: #fff;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 16px;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 .btn:hover {
-  background: linear-gradient(to right, #ff4a6e, #ff6070);
+  background: #6a11cb;
 }
