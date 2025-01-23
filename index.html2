@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Sharing & Upload</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="upload-container">
+    <h1>Share and Transfer Files</h1>
+    <form id="file-upload-form">
+      <div class="input-group">
+        <label for="file-upload">Choose a file:</label>
+        <input type="file" id="file-upload" name="file" multiple required>
+      </div>
+      <button type="submit" class="upload-btn">Upload</button>
+    </form>
+    <div id="file-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
